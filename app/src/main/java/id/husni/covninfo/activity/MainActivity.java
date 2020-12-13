@@ -1,3 +1,9 @@
+/*
+ * Made With Love
+ * Author @Moh Husni Mubaraq
+ * Not for Commercial Purpose
+ */
+
 package id.husni.covninfo.activity;
 
 import android.content.Intent;
@@ -11,11 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import id.husni.covninfo.R;
-import id.husni.covninfo.activity.AboutActivity;
-import id.husni.covninfo.activity.InfoActivity;
-import id.husni.covninfo.activity.SettingActivity;
 import id.husni.covninfo.fragment.IdnFragment;
-import id.husni.covninfo.fragment.HistoryFragment;
+import id.husni.covninfo.fragment.NewsFragment;
 import id.husni.covninfo.fragment.SummaryFragment;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -60,12 +63,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                         .commit();
                 return true;
 
-            //Ke Fragment Today
-            case R.id.historyMenu:
-                HistoryFragment historyFragment = new HistoryFragment();
+            //ke Fragment News
+            case R.id.newsMenu:
+                NewsFragment newsFragment = new NewsFragment();
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.main_frame, historyFragment)
+                        .replace(R.id.main_frame,newsFragment)
                         .commit();
                 return true;
         }

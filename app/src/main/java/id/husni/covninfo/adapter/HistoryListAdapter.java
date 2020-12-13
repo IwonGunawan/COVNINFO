@@ -1,3 +1,9 @@
+/*
+ * Made With Love
+ * Author @Moh Husni Mubaraq
+ * Not for Commercial Purpose
+ */
+
 package id.husni.covninfo.adapter;
 
 import android.content.Context;
@@ -15,8 +21,8 @@ import id.husni.covninfo.R;
 import id.husni.covninfo.model.HistoryModel;
 
 public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.ViewHolder> {
-    private ArrayList<HistoryModel> historyModels = new ArrayList<>();
-    private Context context;
+    private final ArrayList<HistoryModel> historyModels = new ArrayList<>();
+    private final Context context;
 
     public HistoryListAdapter(Context context) {
         this.context = context;
@@ -57,12 +63,12 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
         return historyModels.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView lastUpdateDate;
-        TextView tvConfirmed;
-        TextView tvRecovered;
-        TextView tvDeath;
-        TextView tvListCountry;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        final TextView lastUpdateDate;
+        final TextView tvConfirmed;
+        final TextView tvRecovered;
+        final TextView tvDeath;
+        final TextView tvListCountry;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);

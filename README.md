@@ -1,14 +1,27 @@
-![demo_image](https://user-images.githubusercontent.com/28988446/77063551-79943b00-6a10-11ea-9d93-a67d559ea583.png)
-# COVNINFO
+# COVNINFO  
+Don't forget to star and fork this project, I will really appreciate it  
+## What's New  
+- [v3.0] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+Delete unnecessary interface, and make it simple  
+Pie Chart removed    
+One of bottom nav menu deleted, cause i wanna make it simple  
+- [v2.5] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+Additional news features about corona virus in Indonesia   
+- [v2.0] [See Here](https://github.com/whoishusni/COVNINFO/releases)  
+Provinces in Indonesia have been added   
 ## Library Reference :  
-- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)  
 - [GSON](https://github.com/google/gson)  
 - [Retrofit](https://github.com/square/retrofit)
 - ViewModel  
 - LiveData  
 
 ## API  
-- [Mathdroid](https://github.com/mathdroid/covid-19-api) for JSON Data  
+- [Mathdroid](https://github.com/mathdroid/covid-19-api) for Global JSON Data  
+- [KawalCorona](https://kawalcorona.com/api/) for Indo JSON Data  
+- [Api News](https://newsapi.org) for News JSON Data  
+
+## Image
+![demo_image](https://user-images.githubusercontent.com/28988446/77763335-de394080-7075-11ea-95db-321a1ccd4e20.jpg)
 
 ## Note  
 Transitively from the John Hopkins Site, the data may not be used for commercial purposes.  

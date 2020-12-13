@@ -5,61 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".fragment.HistoryFragment">
+    tools:context=".activity.IndonesiaProvinceActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginHorizCard"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/marginHorizCard"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_marginTop="4dp"
-        android:layout_marginStart="@dimen/marginHorizCard"
-        android:layout_marginEnd="@dimen/marginHorizCard">
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textStyle="bold"
+            android:text="@string/legends"
             android:textColor="@android:color/white"
-            android:text="@string/legends" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textStyle="bold"
             android:drawableStart="@drawable/ic_trending_up"
+            android:text="@string/confirmed"
             android:textColor="@android:color/white"
-            android:text="@string/confirmed" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textStyle="bold"
             android:drawableStart="@drawable/ic_trending_down"
+            android:text="@string/recovered"
             android:textColor="@android:color/white"
-            android:text="@string/recovered" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textStyle="bold"
             android:drawableStart="@drawable/ic_dead"
+            android:text="@string/deaths"
             android:textColor="@android:color/white"
-            android:text="@string/deaths" />
+            android:textStyle="bold" />
     </LinearLayout>
-
     <TextView
-        android:id="@+id/tvEmptyList"
+        android:id="@+id/tvEmptyListProvince"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_healing"
@@ -75,20 +74,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipeRefreshList"
+        android:id="@+id/swipeRefreshProvince"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/listRecycler"
+            android:id="@+id/provinceRecycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
